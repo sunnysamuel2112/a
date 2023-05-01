@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,29 +9,54 @@
     <link rel="stylesheet" href="assets/styles/app.css" />
     <script src="assets/scripts/objects.js" defer></script>
   </head>
+
   <body>
     <section id="user-input" class="card">
       <div class="control">
-        <label for="title">Favorite Movie</label>
+        <label for="title">Task</label>
+        <label id = "requiredfavmov"></label>
         <input type="text" id="title" />
       </div>
       <div class="inline-controls">
         <div class="control">
           <label for="extra-name">Extra Information (Name)</label>
+          
           <input type="text" id="extra-name" />
         </div>
-        <div class="control">
+        <!-- <div class="control">
           <label for="extra-value">Extra Information (Value)</label>
           <input type="text" id="extra-value" />
-        </div>
+        </div>-->
+      </div> 
+      <div>
+        
+        <button id="add-todo-btn">Add todo</button>
+
       </div>
-      <button id="add-movie-btn">Add Movie</button>
     </section>
+
+  </section>
+  <section id="filter" class="card">
+    <label for="filter-title">Filter by Title</label>
+    <input type="text" id="filter-title" />
     <section id="filter" class="card">
-      <label for="filter-title">Filter by Title</label>
-      <input type="text" id="filter-title" />
-      <button id="search-btn">Search it</button>
+      <label for="filter-title">To Do</label>
+      <ul id="show-list"></ul>
+      <button id="clearall-btn">Clear all</button>
     </section>
-    <ul id="movie-list" class="card"></ul>
+    <button id="search-btn">Search it</button>
+  </section>
+    
+    <!-- <section id="filter" class="card">
+      <label for="filter-title">Favourite todo</label>
+      <ul id="show-list"></ul>
+      <button id="clearall-btn">Clear all</button>
+    </section> -->
+
+    <!-- <ul id="todo-list" class="card"> 
+      </ul>-->
+
+    
   </body>
+
 </html>

@@ -66,26 +66,34 @@ button:active {
 }
 
 #user-input,
-#movie-list,
+#todo-list,
 #filter {
   width: 50rem;
   max-width: 90%;
   margin: 2rem auto;
 }
 
-#movie-list {
-  display: none;
-  list-style: none;
+#todo-list {
+  /* display: none; */
+  /* list-style: none; */
   padding: 1rem;
 }
 
-#movie-list.visible {
+#todo-list.visible {
   display: block;
 }
 
-#movie-list li {
+#todo-list li {
   margin: 1rem;
   color: #ff0062;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+tr {
+  margin: 10px;
+}
+
+#todo-title {
+  size: 100px;
 }
